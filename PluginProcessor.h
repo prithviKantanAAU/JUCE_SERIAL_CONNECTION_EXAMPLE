@@ -100,7 +100,7 @@ private:
                 }*/
 
                 String s;
-                while (pInputStream->canReadLine())
+                if (pInputStream->canReadLine())
                 {
                     s = pInputStream->readNextLine();
                     DBG(s);
